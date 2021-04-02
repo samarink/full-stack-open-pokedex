@@ -41,3 +41,4 @@ jobs:
           heroku_email: 'contsean@gmail.com'
           healthcheck: 'https://fullstack-pokedex-samarink.herokuapp.com/health'
           checkstring: 'ok'
+          rollbackonhealthcheckfailed: true
