@@ -37,5 +37,7 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "fullstack-pokedex-samarink"
-          heroku_email: "contsean@gmail.com"
+          heroku_app_name: 'fullstack-pokedex-samarink'
+          heroku_email: 'contsean@gmail.com'
+          healthcheck: 'https://fullstack-pokedex-samarink.herokuapp.com/health'
+          checkstring: 'ok'
